@@ -91,8 +91,11 @@ section {
 
 .carrusel-interno {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  gap: 1em;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* para iOS */
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .tarjeta-hora {
@@ -122,10 +125,6 @@ section {
   text-align: center;
 }
 
-input[type="range"] {
-  width: 100%;
-  margin-top: 1em;
-}
 
 @media (max-width: 768px) {
   .tarjeta-dia {
