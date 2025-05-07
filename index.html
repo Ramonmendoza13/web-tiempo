@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Tiempo</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="info-tiempo">
+      <img id="icono-tiempo" src="" alt="Icono del tiempo">
+      <span id="temperatura-actual"></span>
+      <span id="viento-actual"></span>
+    </div>
+    <div id="ubicacion"></div>
+  </header>
+
+  <section class="busqueda">
+    <input type="text" id="input-ciudad" placeholder="Introduce una ciudad...">
+    <button id="buscar-ciudad">Buscar</button>
+    <button id="usar-ubicacion">Mi ubicación</button>
+  </section>
+
+  <main>
+    <div class="selector-vista">
+      <button id="vista-horas">Por horas</button>
+      <button id="vista-dias">Por días</button>
+    </div>
+
+    <section id="contenedor-horas" class="carrusel oculto">
+      <div class="carrusel-interno" id="carrusel-horas"></div>
+      <input type="range" id="rango-horas" min="0" max="0" step="1" value="0">
+    </section>
+
+    <section id="contenedor-dias" class="carrusel oculto">
+      <div class="carrusel-interno" id="carrusel-dias"></div>
+      <input type="range" id="rango-dias" min="0" max="0" step="1" value="0">
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
