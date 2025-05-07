@@ -1,4 +1,4 @@
-let localidad = 'Madrid'; // valor por defecto
+let localidad = 'Badolatosa'; // valor por defecto
 
 // Función principal de carga
 function cargarTiempo(ciudad) {
@@ -57,7 +57,7 @@ function cargarHoras(dias) {
           <div>${horaTexto}</div>
           <img src="${hora.condition.icon}" alt="icono">
           <div>${hora.temp_c} °C</div>
-            <div>${hora.precip_mm} mm</div>
+            <div>${hora.precip_mm} mm | ${hora.chance_of_rain}%</div>
         </div>`;
       contenedor.append(tarjeta);
       totalHoras++;
