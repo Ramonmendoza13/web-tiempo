@@ -2,7 +2,7 @@ let localidad = 'Badolatosa'; // valor por defecto
 
 // Función principal de carga
 function cargarTiempo(ciudad) {
-  const API_KEY = '527879194a784a07863114325252404'; // Sustituir por tu clave real
+  const API_KEY = '527879194a784a07863114325252404'; 
   const URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${ciudad}&days=10&aqi=no&alerts=no`;
 
   $.ajax({
