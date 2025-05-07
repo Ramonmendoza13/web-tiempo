@@ -103,7 +103,7 @@ section {
   border-radius: 10px;
   padding: 0.5em;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  min-width: 100px;
+  min-width: 105px;
   text-align: center;
   font-size: 0.9em;
 }
@@ -129,10 +129,6 @@ section {
 @media (max-width: 768px) {
   .tarjeta-dia {
     min-width: 90%;
-  }
-
-  .tarjeta-hora {
-    min-width: 80px;
   }
 
   .carrusel-interno {
